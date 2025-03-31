@@ -51,7 +51,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td id="b1" onclick="MarcarSorteado()" >8</td>
+                    <td id="b1" onclick="MarcarSorteado('b1',this)" >8</td>
                     <td id="i1">24</td>
                     <td id="n1">33</td>
                     <td id="g1">51</td>
@@ -115,8 +115,19 @@
         console.log(b2);
         console.log(b1);
 
-        function MarcarSorteado(){
-            alert("deu certo o clique");
+        function MarcarSorteado(nomeId, elemento){
+            console.log("Elemento=")
+            console.log(elemento)
+            console.log(nomeId)
+            elemento.style.backgroundColor = "red";
+            if(elemento.style.backgroundColor == "red")
+            {
+                alert("a cor é red")
+            }
+            else
+            {
+
+            }
         }
 
 
