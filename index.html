@@ -7,11 +7,28 @@
 </head>
 <body>
     <h1>Página inicial do projeto</h1>
+
+    <div id="caixa"></div>
+
+    <input id="exemplo" type="text" />
+    <input id="Rua" type="text" name="" value="" />
+
+    <button onclick="clique()">
+        Transportar Texto
+    </button>
     <script>
-        alert("Bem Vindo usuário");
-        if(true){
-            console.log("")
+        function clique(){
+            var valor = document.getElementById("exemplo")
+            var Rua = document.getElementById("Rua")
+            var objeto = {
+                "Nome" : valor.value,
+                "Rua" : Rua.value
+            }
+
+            var textocaixa = document.getElementById("caixa")
+            textocaixa.innerText = valor.value
         }
+        
     </script>
 </body>
 </html>
