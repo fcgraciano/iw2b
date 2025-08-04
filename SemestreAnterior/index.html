@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial do projeto</title>
+</head>
+<body>
+    <h1>Página inicial do projeto</h1>
+
+    <div id="caixa"></div>
+
+    <input id="exemplo" type="text" />
+    <input id="Rua" type="text" name="" value="" />
+
+    <button onclick="clique()">
+        Transportar Texto
+    </button>
+
+    <h1>Olhaaaaaaaaaaaaaaaaaaaaaaa</h1>
+    <script>
+        function clique(){
+            var valor = document.getElementById("exemplo")
+            var Rua = document.getElementById("Rua")
+            var objeto = {
+                "Nome" : valor.value,
+                "Rua" : Rua.value
+            }
+
+            var textocaixa = document.getElementById("caixa")
+            textocaixa.innerText = valor.value
+        }
+        
+        
+
+    </script>
+</body>
+</html>
